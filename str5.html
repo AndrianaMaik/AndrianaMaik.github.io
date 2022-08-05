@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Форма зворотнього зв'язку</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#qq").click(function(){
+           $("submit").toggleClass("class1")
+           $("a").toggleClass("class2")
+           $("h1, h2").toggleClass("class3")
+           $("body").toggleClass("class4")
+           $("input").toggleClass("class5")
+           $("textarea").toggleClass("class6")
+        })
+    })
+</script>
+<style>
+.menu{
+list-style: none;
+margin: 0;
+padding:0;
+}
+li{
+display: inline;
+}
+.a{
+display: inline;
+}
+a{
+text-decoration: none;
+color: white;
+font-family: Consolas;
+font-size:10px;
+background-color: #ffa500;
+padding: 10px;
+}
+body{
+background-image:url(https://oir.mobi/uploads/posts/2021-03/thumbs/1616601442_19-p-nezhno-oranzhevii-fon-20.jpg);
+}
+h1{
+font-family: Comic Sans MS;
+font-size: 22px;
+margin-top: 60px;
+}
+h2{
+font-family: Comic Sans MS;
+font-size: 20px;
+}
+.box2{
+background: white;
+border: ridge 3px white;
+font-size: 15px;
+font-family: Verdana;
+width: 600px;
+
+}
+.box{
+margin:0 auto;
+}
+textarea{
+resize: none;
+width: 260px;
+height: 100px;
+}
+submit{
+font-size: 20px;
+font-family: monospace;
+color: #fff;
+background: linear-gradient(to left, #f5af19, #f12711, #f5ff19);
+text-decoration: none;
+padding: 20px 70px;
+border-radius: 10px;
+background-size: 200%;
+transition: .5s;
+}
+submit:hover{
+background-position: right;
+}
+a:hover{
+background: #d58300;
+}
+form{
+width: auto;
+}
+.class1{
+    font-size: 20px;
+font-family: monospace;
+color: #fff;
+background: linear-gradient(to left,#49361a,  #423623, #544a34, #7b694e, #49361a, #423623, #706142, #544a34, #423623, #49361a);
+text-decoration: none;
+padding: 20px 70px;
+border-radius: 10px;
+background-size: 200%;
+transition: .5s;
+}
+.class2{
+    background: #60553e;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px 6px;
+    color:  #e1ded8;
+    border: 1px double #bcb4a4;
+}
+.class2:hover{
+    background: #49361a;
+}
+.class3{
+    font-family: Helvetica;
+}
+.class4{
+    background: linear-gradient(to bottom, #e1e0de, #bcb4a4, #8a7c65);
+}
+.class5{
+    width: 230px;
+    height: 40px;
+}
+.class6{
+    width: 300px;
+    height: 150px;
+}
+</style>
+</head>
+<body>
+<ul class="menu" align="center">
+    <li><a href="index.html">Характеристика персонажів</a></li>
+    <li><a href="str2.html">Трошки про мангу</a></li>
+    <li><a href="str3.html">Аніме чи манга?</a></li>
+    <li><a href="str4.html">"Моя геройська академія" фільми</a></li>
+    <li><a href="str5.html">Форма зворотнього зв'язку</a></li>
+    <li><a href="str1.html">про персонажів</a></li>
+</ul>
+<div class="box" align="center">
+<form align="center">
+<h1 align="center">Виникли питання, знайшли помилку або хочете щось доповнити?</h1>
+<h2 align="center">Зв'яжіться з нами просто зараз</h2>
+
+<p align="center">Електронна пошта<br><input type="text"></input>
+<br><br>
+Ім'я<br><input type="text"></input>
+<br><br>Введіть текст
+<br>
+<textarea></textarea>
+<br><br><br>
+<input type="submit" value="Надіслати">
+<br><br>
+</p>
+</form>
+</div>
+<div align="center"><button id="qq">Тема 1/ Тема 2</button></div>
+</body>
+</html>
